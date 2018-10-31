@@ -22,7 +22,6 @@ public class HibernateUtil {
             configuration.addAnnotatedClass(Beer.class);
             StandardServiceRegistryBuilder builder = new StandardServiceRegistryBuilder().applySettings(configuration.getProperties());
             sessionFactory = configuration.buildSessionFactory(builder.build());
-
         }
         return sessionFactory;
     }
